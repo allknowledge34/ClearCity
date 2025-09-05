@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "113855810608",
+    "project_id": "clearcity-ea9be",
+    "storage_bucket": "clearcity-ea9be.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113855810608:android:962ffc2ed85380822331f5",
+        "android_client_info": {
+          "package_name": "com.sachin.clearcity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnYgUxdtFV2i_7w6vINRvBt5XcXmiyoa8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

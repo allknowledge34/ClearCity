@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/home"
+    android:icon="@drawable/ic_home"
+    app:cnb_iconColor="@color/white" />
+
+<item
+    android:id="@+id/reward"
+    android:icon="@drawable/bottom_btn3"
+    app:cnb_iconColor="@color/white" />
+
+<item
+    android:id="@+id/leaderboard"
+    android:icon="@drawable/bottom_btn2"
+    app:cnb_iconColor="@color/white" />
+
+<item
+    android:id="@+id/profile"
+    android:icon="@drawable/profile"
+    app:cnb_iconColor="@color/white" />
+</menu>
