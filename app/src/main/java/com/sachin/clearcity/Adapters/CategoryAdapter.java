@@ -1,6 +1,7 @@
 package com.sachin.clearcity.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.sachin.clearcity.ApplicationActivity;
 import com.sachin.clearcity.databinding.ViewholderCategoryBinding;
 import com.sachin.clearcity.models.CategoryModel;
 
@@ -39,6 +41,13 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHo
         Glide.with(context)
                 .load(item.getImagePath())
                 .into(holder.binding.pic);
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ApplicationActivity.class);
+            intent.putExtra("categoryName", item.getName());
+            intent.putExtra("categoryImage", item.getImagePath());
+            context.startActivity(intent);
+        });
     }
 
     @Override

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ClearCity"
         tools:targetApi="31">
         <activity
+            android:name=".ApplicationActivity"
+            android:exported="false" />
+        <activity
             android:name=".PaymentActivity"
             android:exported="false" />
         <activity
