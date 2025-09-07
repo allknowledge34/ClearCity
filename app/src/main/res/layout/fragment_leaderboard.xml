@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Unknown"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rank2Profile"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Unknown"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rank3profile"
@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Unknown"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/profile_image"
@@ -151,7 +151,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="5"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -179,7 +179,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="5"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -206,7 +206,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:text="5"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textStyle="bold" />
     </LinearLayout>
 
