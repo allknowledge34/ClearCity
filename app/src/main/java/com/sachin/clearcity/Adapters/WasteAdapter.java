@@ -1,6 +1,7 @@
 package com.sachin.clearcity.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,7 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.sachin.clearcity.ApplicationActivity;
 import com.sachin.clearcity.R;
+import com.sachin.clearcity.StatusActivity;
 import com.sachin.clearcity.models.WasteModel;
 
 import java.util.List;
@@ -44,6 +47,11 @@ public class WasteAdapter extends RecyclerView.Adapter<WasteAdapter.ViewHolder> 
                     .load(waste.getImageUrls().get(0))
                     .placeholder(R.drawable.baseline_image_24)
                     .into(holder.img);
+
+            holder.itemView.setOnClickListener(v -> {
+                Intent intent = new Intent(context, StatusActivity.class);
+                context.startActivity(intent);
+            });
         }
     }
 

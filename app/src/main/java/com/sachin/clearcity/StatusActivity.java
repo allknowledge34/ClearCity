@@ -13,15 +13,16 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.sachin.clearcity.databinding.ActivityPaymentBinding;
+import com.sachin.clearcity.databinding.ActivityStatusBinding;
 
-public class PaymentActivity extends AppCompatActivity {
+public class StatusActivity extends AppCompatActivity {
 
-    ActivityPaymentBinding binding;
+    ActivityStatusBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityPaymentBinding.inflate(getLayoutInflater());
+        binding = ActivityStatusBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         setStatusBarColor();
