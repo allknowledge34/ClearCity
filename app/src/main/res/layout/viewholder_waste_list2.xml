@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="284dp"
+    android:layout_width="match_parent"
     android:layout_height="244dp"
     android:layout_margin="8dp"
     android:background="@drawable/item_white_bg"
@@ -12,13 +12,13 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/img"
         android:layout_width="0dp"
-        android:scaleType="centerCrop"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.circleImageView"
         android:layout_height="136dp"
         android:layout_margin="8dp"
+        android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.circleImageView"
         app:srcCompat="@drawable/main_pic" />
 
     <ImageView
@@ -34,15 +34,15 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/light_blue_bg"
+        android:gravity="center"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
-        android:gravity="center"
-        android:layout_margin="16dp"
         android:text="Wasted"
-        android:background="@drawable/light_blue_bg"
+        android:textColor="@color/skyBlue"
         android:textSize="11sp"
         android:textStyle="bold"
-        android:textColor="@color/skyBlue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

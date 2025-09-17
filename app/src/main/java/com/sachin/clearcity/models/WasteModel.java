@@ -1,8 +1,9 @@
 package com.sachin.clearcity.models;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class WasteModel {
+public class WasteModel implements Serializable {
 
     private String uId;
     private String title;

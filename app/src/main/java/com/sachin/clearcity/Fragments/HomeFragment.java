@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -26,6 +28,7 @@ import com.sachin.clearcity.Adapters.CategoryAdapter;
 import com.sachin.clearcity.Adapters.WasteAdapter;
 import com.sachin.clearcity.NotificationActivity;
 import com.sachin.clearcity.R;
+import com.sachin.clearcity.TopWasteActivity;
 import com.sachin.clearcity.databinding.FragmentHomeBinding;
 import com.sachin.clearcity.databinding.FragmentLeaderboardBinding;
 import com.sachin.clearcity.models.CategoryModel;
@@ -79,24 +82,28 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        binding.seeTxt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getContext(), TopWasteActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return binding.getRoot();
     }
 
     @Override
-    public void onResume() {
-        super.onResume();
-        requireActivity().getWindow().setStatusBarColor(
-                getResources().getColor(R.color.skyBlue)
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        requireActivity().getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         );
     }
 
-    @Override
-    public void onPause() {
-        super.onPause();
-        requireActivity().getWindow().setStatusBarColor(
-                getResources().getColor(R.color.white)
-        );
-    }
 
     private void initCategory() {
 

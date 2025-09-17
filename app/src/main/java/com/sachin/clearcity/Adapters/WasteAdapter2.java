@@ -12,19 +12,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.sachin.clearcity.ApplicationActivity;
 import com.sachin.clearcity.R;
 import com.sachin.clearcity.StatusActivity;
 import com.sachin.clearcity.models.WasteModel;
 
 import java.util.List;
 
-public class WasteAdapter extends RecyclerView.Adapter<WasteAdapter.ViewHolder> {
+public class WasteAdapter2 extends RecyclerView.Adapter<WasteAdapter2.ViewHolder> {
 
     private Context context;
     private List<WasteModel> wasteList;
 
-    public WasteAdapter(Context context, List<WasteModel> wasteList) {
+    public WasteAdapter2(Context context, List<WasteModel> wasteList) {
         this.context = context;
         this.wasteList = wasteList;
     }
@@ -32,7 +31,7 @@ public class WasteAdapter extends RecyclerView.Adapter<WasteAdapter.ViewHolder> 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.viewholder_waste_list, parent, false);
+        View view = LayoutInflater.from(context).inflate(R.layout.viewholder_waste_list2, parent, false);
         return new ViewHolder(view);
     }
 

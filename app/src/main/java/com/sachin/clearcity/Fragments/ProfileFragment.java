@@ -61,7 +61,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.pinkesh.site/")));
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://doc-hosting.flycricket.io/clear-cityt-privacy-policy/c9e4cf5e-995c-49ea-809b-f2900047dc66/privacy")));
             }
         });
 
@@ -69,7 +69,7 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.pinkesh.site/")));
+                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://doc-hosting.flycricket.io/clear-cityt-terms-of-use/71c2ecea-2b32-432f-88ec-80c4eb6b1968/terms")));
             }
         });
 
