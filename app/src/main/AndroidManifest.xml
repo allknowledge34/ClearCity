@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ClearCity"
         tools:targetApi="31">
         <activity
+            android:name=".Adapters.ContactActivity"
+            android:exported="false" />
+        <activity
             android:name=".TopWasteActivity"
             android:exported="false" />
         <activity

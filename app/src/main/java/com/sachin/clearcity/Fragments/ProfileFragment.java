@@ -20,6 +20,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.sachin.clearcity.Adapters.ContactActivity;
 import com.sachin.clearcity.LoginActivity;
 import com.sachin.clearcity.PaymentActivity;
 import com.sachin.clearcity.R;
@@ -94,7 +95,8 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.pinkesh.site/")));
+                Intent intent = new Intent(getContext(), ContactActivity.class);
+                startActivity(intent);
             }
         });
 
