@@ -58,4 +58,5 @@ dependencies {
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation ("com.squareup.picasso:picasso:2.8")
     implementation("com.github.bumptech.glide:glide:5.0.4")
+    implementation("com.google.android.gms:play-services-ads:24.2.0")
 }

@@ -71,7 +71,7 @@
                         android:layout_marginStart="8dp"
                         android:text="Hello,Sachin"
                         android:textColor="@color/white"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/profile_image"
@@ -96,7 +96,7 @@
                     android:layout_marginTop="16dp"
                     android:text="Report Waste\nTrack Progress. Transform Your City."
                     android:textColor="@color/white"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/constraintLayout"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />

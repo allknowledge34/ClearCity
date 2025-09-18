@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.sachin.clearcity.AdmobAds.Admob;
 import com.sachin.clearcity.R;
 import com.sachin.clearcity.databinding.FragmentRewardBinding;
 
@@ -29,6 +30,10 @@ public class RewardFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = FragmentRewardBinding.inflate(inflater, container, false);
+
+        Admob.loadBannerAd(binding.bannerAd, requireContext());
+
+
         return binding.getRoot();
 
 
