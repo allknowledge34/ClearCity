@@ -27,6 +27,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.sachin.clearcity.Adapters.CategoryAdapter;
 import com.sachin.clearcity.Adapters.WasteAdapter;
 import com.sachin.clearcity.NotificationActivity;
+import com.sachin.clearcity.QrActivity;
 import com.sachin.clearcity.R;
 import com.sachin.clearcity.TopWasteActivity;
 import com.sachin.clearcity.databinding.FragmentHomeBinding;
@@ -73,14 +74,15 @@ public class HomeFragment extends Fragment {
         binding.recyclerViewWorks.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
         binding.recyclerViewWorks.setAdapter(wasteAdapter);
 
-        binding.bell.setOnClickListener(new View.OnClickListener() {
+        binding.floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getContext(), NotificationActivity.class);
+                Intent intent = new Intent(getContext(), QrActivity.class);
                 startActivity(intent);
             }
         });
+
 
         binding.seeTxt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -170,7 +172,6 @@ public class HomeFragment extends Fragment {
                 UserModel model = documentSnapshot.toObject(UserModel.class);
 
                 if (documentSnapshot.exists()){
-                    binding.userName.setText(model.getName());
 
                     Picasso.get()
                             .load(model.getProfile())

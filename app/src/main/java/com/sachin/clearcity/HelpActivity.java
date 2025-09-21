@@ -22,11 +22,11 @@ public class HelpActivity extends AppCompatActivity {
         binding = ActivityHelpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.tbOrderDetailFragment.setNavigationOnClickListener(v -> {
+        binding.back.setOnClickListener(v -> {
             finish();
         });
 
-        binding.img.setOnClickListener(v -> {
+        binding.contact.setOnClickListener(v -> {
             Uri uri = Uri.parse("smsto:9876543210");
             Intent intent = new Intent(Intent.ACTION_SENDTO, uri);
             intent.putExtra("sms_body", "the SMS text");

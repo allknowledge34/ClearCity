@@ -78,7 +78,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView15"
         app:layout_constraintEnd_toStartOf="@+id/textView15"
         app:layout_constraintTop_toTopOf="@+id/textView15"
-        app:srcCompat="@drawable/coin" />
+        app:srcCompat="@drawable/star" />
 
     <ImageView
         android:id="@+id/imageView9"

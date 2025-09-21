@@ -23,6 +23,7 @@ import com.google.firebase.storage.UploadTask;
 import com.sachin.clearcity.Adapters.ContactActivity;
 import com.sachin.clearcity.HelpActivity;
 import com.sachin.clearcity.LoginActivity;
+import com.sachin.clearcity.NewActivity;
 import com.sachin.clearcity.PaymentActivity;
 import com.sachin.clearcity.R;
 import com.sachin.clearcity.databinding.FragmentProfileBinding;
@@ -93,11 +94,12 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        binding.rate.setOnClickListener(new View.OnClickListener() {
+        binding.newTxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.pinkesh.site/")));
+                Intent intent = new Intent(getContext(), NewActivity.class);
+                startActivity(intent);
             }
         });
 

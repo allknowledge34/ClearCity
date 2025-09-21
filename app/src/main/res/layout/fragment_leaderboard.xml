@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#F0EFEF"
     tools:context=".Fragments.LeaderboardFragment" >
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Unknown"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rank2Profile"
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Unknown"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/rank3profile"
@@ -120,7 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Unknown"
-        android:textColor="@color/green"
+        android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/profile_image"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/white"
+    android:background="#F0EFEF"
     tools:context=".StatusActivity">
 
     <ScrollView
@@ -59,7 +59,7 @@
                     android:paddingStart="16dp"
                     android:gravity="center"
                     android:background="@drawable/light_blue_bg"
-                    android:textColor="@color/green"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -84,7 +84,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/textView16"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/coin" />
+                    app:srcCompat="@drawable/star" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
@@ -128,7 +128,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:background="@color/white"
+                    android:background="#F0EFEF"
                     android:padding="7dp">
 
                     <ImageView
@@ -213,21 +213,33 @@
 
                 <RatingBar
                     android:id="@+id/ratingBar"
-                    style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
                     android:numStars="5"
                     android:rating="0"
-                    android:stepSize="1.0" />
+                    android:stepSize="1.0"
+                    android:isIndicator="false"
+                    android:focusable="true"
+                    android:clickable="true"/>
+
+
+                <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="Feedback" />
 
                 <Button
                     android:id="@+id/btnSubmitRating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Submit"
-                    android:backgroundTint="@color/green"
-                    android:textColor="@color/white"/>
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/black"/>
+
             </LinearLayout>
 
 
